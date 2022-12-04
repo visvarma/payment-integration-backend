@@ -16,9 +16,9 @@ app.use("/app", routes);
 app.get("/health", (req, res) => {
   return res.json({ ok: true });
 });
-// app.get("/logo.jpg", (req, res) => {
-//   res.sendFile(path.join(__dirname, "logo.jpg"));
-// });
+app.get("/logo.jpg", (req, res) => {
+  res.sendFile(path.join(__dirname, "logo.jpg"));
+});
 
 const server = async () => {
   try {
