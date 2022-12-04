@@ -1,6 +1,6 @@
-const OrderModel = require("../models/Order/schema");
-const ProductModel = require("../models/Product/schema");
-const RazorpayService = require("../integrations/razorpay");
+const OrderModel = require("../models/Order/schema.js");
+const ProductModel = require("../models/Product/schema.js");
+const RazorpayService = require("../integrations/razorpay.js");
 
 exports.createOrder = async (req, res, next) => {
   try {
