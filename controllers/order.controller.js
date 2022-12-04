@@ -1,4 +1,4 @@
-const OrderModel = require("../models/Order/schema");
+const OrderModel = require("../models/Order/Schema");
 const ProductModel = require("../models/Product/schema");
 const RazorpayService = require("../integrations/razorpay");
 
