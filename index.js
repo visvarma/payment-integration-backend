@@ -11,8 +11,8 @@ const cors = require("cors");
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
-// const routes = require("./routes/order.routes");
-// app.use("/app", routes);
+const routes = require("./routes/order.routes");
+app.use("/app", routes);
 app.get("/health", (req, res) => {
   return res.json({ ok: true });
 });
