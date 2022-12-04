@@ -1,6 +1,6 @@
 const dotenv = require("dotenv");
 const { default: mongoose } = require("mongoose");
-const ProductModel = require("./models/Product/schema");
+const ProductModel = require("./models/Product/Schema");
 dotenv.config();
 
 const Products = [

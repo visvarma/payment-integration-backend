@@ -1,6 +1,6 @@
 const Razorpay = require("razorpay");
 const shortid = require("shortid");
-const OrderModel = require("../models/Order/schema");
+const OrderModel = require("../models/Order/Schema");
 console.log(process.env.RAZORPAY_KEY_ID);
 const razorpay = new Razorpay({
   key_id: process.env.RAZORPAY_KEY_ID,
