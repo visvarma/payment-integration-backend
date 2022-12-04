@@ -42,7 +42,9 @@ exports.getAllOrder = async (req, res, next) => {
   try {
     const order = await OrderModel.find({
       user_id: req.params.user_id,
-    }).populate("product.id");
+    })
+      .sort({ createdAt: "desc" })
+      .populate("product.id");
     if (!order) return res.status(404).json({ message: "Order not found" });
     return res.status(200).json({ order });
   } catch (error) {
